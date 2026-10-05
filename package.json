@@ -1,0 +1,26 @@
+{
+    "name": "home-energy-hub",
+    "version": "0.1.0",
+    "description": "Unified API over home energy OEM clouds with resilient vendor adapters",
+    "type": "module",
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json",
+        "start": "node dist/server.js",
+        "demo": "node src/demo.ts",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+    },
+    "engines": {
+        "node": ">=22"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "fastify": "^5.12.5",
+        "zod": "^3.25.76"
+    },
+    "devDependencies": {
+        "@types/node": "^22.20.5",
+        "typescript": "~5.9",
+        "vitest": "^3.2.7"
+    }
+}
